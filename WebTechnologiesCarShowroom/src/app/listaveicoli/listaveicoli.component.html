@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Car List</title>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="listaveicoli.component.css">
+
+  <link rel="stylesheet" href="bootstrap-footer-20/css/style.css">
+
+  <meta name="description" content="">
+  <link rel="stylesheet" href="nicepage.css" media="screen">
+  <link rel="stylesheet" href="Home.css" media="screen">
+
+</head>
+
+<body>
+  <!--header-->
+  <div class = "logo">
+    <img src = "assets/logo.jpeg" class = "logo-image">
+  </div>
+  <div class = "icon" (click)="displayMain(pagesArray)">
+    Home
+  </div>
+  <div class = "icon">
+    Informations
+  </div>
+  <div class = "icon" (click)="displayContact(pagesArray)">
+    Contact
+  </div>
+  <div class = "icon">
+    Cars list
+  </div>
+  <div class = "icon">
+    <i class="fa fa-facebook"></i>
+  </div>
+  <div class = "icon">
+    <i class="fa fa-instagram"></i>
+  </div>
+
+<!--content-->
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="pezzodisopra">
+      <img src="sfondo.jpg" id="immagine">
+      <div class="w3-display-left w3-text-white" style="padding:48px">
+        <span class="w3-large">ARTURAUTO <br>
+          Dal 1985 professionalità e affidabilità per la tua nuova auto</span>
+        <p><a href="#about"
+            class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Ottieni
+            maggiori informazioni</a></p>
+      </div>
+      <div id="icone" class="w3-display-bottomleft w3-text-white w3-large" style="padding: 24px 55px">
+        <a href="https://www.facebook.com/profile.php?id=100057620522244" target="_blank">
+          <i class="fa fa-facebook-official w3-hover-opacity"
+            style="font-size: 50px; background-color: white; padding: 10px;"></i>
+        </a>
+        <a href="https://instagram.com/arturauto_di_venezianomaria?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+          <i class="fa fa-instagram w3-hover-opacity"
+            style="font-size: 50px; background-color: white; padding: 10px;"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-container" style="padding:28px 16px" id="about">
+    <h3 class="w3-center">LISTA VEICOLI ATTUALMENTE DISPONIBILI</h3>
+    <p class="w3-center w3-large">Usato garantito</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-quarter">
+        <i class="fa fa-car w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large">Affidabilità</p>
+        <p>Ciò che rende un individuo o un servizio veramente affidabile è la coerenza nella consegna, la capacità
+          di mantenere promesse e l'integrità nell'adempimento degli impegni</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Passion</p>
+        <p>La passione per le macchine non è solo il nostro motore, ma anche il carburante che alimenta ogni vendita,
+          trasformando un semplice acquisto in
+          un viaggio emozionante verso la potenza e la precisione.</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Design</p>
+        <p>Il design di ogni nostra macchina è un'opera d'arte in movimento, un connubio di forma e funzione che
+          riflette
+          l'eleganza e l'innovazione in ogni singolo dettaglio."</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Garanzia</p>
+        <p> Ogni veicolo venduto è accompagnato da una solida garanzia di un anno sul motore, garantendo
+          la tranquillità dei nostri clienti e la durata delle loro avventure su strada.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="u-align-center u-clearfix u-grey-10 u-section-3" id="sec-9c50">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <!--products--><!--products_options_json--><!--{"type":"Recent","source":"","tags":"","count":""}--><!--/products_options_json-->
+      <div class="u-expanded-width u-layout-horizontal u-products u-products-1" data-site-sorting-prop="created"
+        data-site-sorting-order="desc" data-products-datasource="site" data-items-per-page="6" data-products-id="1">
+        <div class="u-repeater u-repeater-1"><!--product_item-->
+          <div class="u-align-left u-container-style u-products-item u-repeater-item u-white u-repeater-item-1"
+            data-product-id="6">
+            <div
+              class="u-container-layout u-similar-container u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-1">
+              <!--product_image--> <!-- ho tolto u image-4 1 2 3 5 6-->
+              <a class="u-product-title-link" href="products/titolo-prodotto-1.html"><img alt=""
+                  class="u-expanded-width u-image u-image-contain u-image-default u-product-control"
+                  src="macchine_in_vendita/alfaromeo.jpg"></a><img
+                class="u-product-second-image"><!--/product_image--><!--product_title-->
+              <h4 class="u-product-control u-text u-text-1">
+                <a class="u-product-title-link" href="products/titolo-prodotto-1.html">Alfa Romeo Alfetta 1.6 Diesel</a>
+              </h4><!--/product_title--><!--product_content-->
+              <div class="u-product-control u-product-desc u-text u-text-2">Una delle migliori macchine in circolazione
+                con un motore forviante e in ottime condizioni</div><!--/product_content--><!--product_price-->
+              <div class="u-product-control u-product-price u-product-price-1">
+                <div class="u-price-wrapper u-spacing-10"><!--product_old_price-->
+                  <div class="u-hide-price u-old-price">
+                    <!--product_old_price_content-->$20<!--/product_old_price_content-->
+                  </div>
+                  <div class="text">7590</div>
+                </div>
+              </div>
+              <button type="submit">Ottieni info</button>
+            </div>
+          </div>
+          <div class="u-align-left u-container-style u-products-item u-repeater-item u-white u-repeater-item-2"
+            data-product-id="5">
+            <div
+              class="u-container-layout u-similar-container u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-2">
+              <!--product_image-->
+              <a class="u-product-title-link" href="products/titolo-prodotto-2.html"><img alt=""
+                  class="u-expanded-width u-image u-image-contain u-image-default u-product-control"
+                  src="macchine_in_vendita/cmax.jpeg"></a><!--/product_image--><!--product_title-->
+              <h4 class="u-product-control u-text u-text-3">
+                <a class="u-product-title-link" href="products/titolo-prodotto-2.html">Ford C-max Titanium 1.5
+                  Diesel</a>
+              </h4><!--/product_title--><!--product_content-->
+              <div class="u-product-control u-product-desc u-text u-text-4">Una delle macchine migliori attualmente
+                disponibili, dotata di un
+                motore potente e in condizioni eccellenti.</div><!--/product_content--><!--product_price-->
+              <div class="u-product-control u-product-price u-product-price-2">
+                <div class="u-price-wrapper u-spacing-10"><!--product_old_price-->
+                  <div class="u-hide-price u-old-price">
+                    <!--product_old_price_content-->$300<!--/product_old_price_content-->
+                  </div>
+                  <div class="text">7999</div>
+                </div>
+              </div>
+              <button type="submit">Ottieni info</button>
+            </div>
+          </div>
+          <div class="u-align-left u-container-style u-products-item u-repeater-item u-white u-repeater-item-3"
+            data-product-id="4">
+            <div
+              class="u-container-layout u-similar-container u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-3">
+              <!--product_image-->
+              <a class="u-product-title-link" href="products/titolo-prodotto-3.html"><img alt=""
+                  class="u-expanded-width u-image u-image-contain u-image-default u-product-control"
+                  src="macchine_in_vendita/fiato.jpeg"></a><!--/product_image--><!--product_title-->
+              <h4 class="u-product-control u-text u-text-5">
+                <a class="u-product-title-link" href="products/titolo-prodotto-3.html">Fiat TipoLounge 1.6 Diesel</a>
+              </h4><!--/product_title--><!--product_content-->
+              <div class="u-product-control u-product-desc u-text u-text-6">Tra le auto in circolazione, questa spicca
+                per le sue condizioni impeccabili e il motore straordinariamente performante</div>
+              <!--/product_content--><!--product_price-->
+              <div class="u-product-control u-product-price u-product-price-3">
+                <div class="u-price-wrapper u-spacing-10"><!--product_old_price-->
+                  <div class="u-hide-price u-old-price">
+                    <!--product_old_price_content-->$25<!--/product_old_price_content-->
+                  </div>
+                  <div class="text">5790</div>
+                </div>
+              </div>
+              <button type="submit">Ottieni info</button>
+            </div>
+          </div>
+          <div class="u-align-left u-container-style u-products-item u-repeater-item u-white u-repeater-item-4"
+            data-product-id="3">
+            <div
+              class="u-container-layout u-similar-container u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-4">
+              <!--product_image-->
+              <a class="u-product-title-link" href="products/titolo-prodotto-4.html"><img alt=""
+                  class="u-expanded-width u-image u-image-contain u-image-default u-product-control"
+                  src="macchine_in_vendita/mokka.jpeg"></a><!--/product_image--><!--product_title-->
+              <h4 class="u-product-control u-text u-text-7">
+                <a class="u-product-title-link" href="products/titolo-prodotto-4.html">Opel Mokka Cosmo 1.7 Diesel</a>
+              </h4><!--/product_title--><!--product_content-->
+              <div class="u-product-control u-product-desc u-text u-text-8">Questa è senza dubbio una delle prime
+                macchine in circolazione,
+                con un motore eccezionale e in uno stato impeccabile.</div><!--/product_content--><!--product_price-->
+              <div class="u-product-control u-product-price u-product-price-4">
+                <div class="u-price-wrapper u-spacing-10"><!--product_old_price-->
+                  <div class="u-hide-price u-old-price">
+                    <!--product_old_price_content-->$25<!--/product_old_price_content-->
+                  </div>
+                  <div class="text">8000</div>
+                </div>
+              </div>
+              <button type="submit">Ottieni info</button>
+            </div>
+          </div>
+          <div class="u-align-left u-container-style u-products-item u-repeater-item u-white u-repeater-item-5"
+            data-product-id="2">
+            <div
+              class="u-container-layout u-similar-container u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-5">
+              <!--product_image-->
+              <a class="u-product-title-link" href="products/titolo-prodotto-5.html"><img alt=""
+                  class="u-expanded-width u-image u-image-contain u-image-default u-product-control"
+                  src="macchine_in_vendita/sportage.jpg"></a><!--/product_image--><!--product_title-->
+              <h4 class="u-product-control u-text u-text-9">
+                <a class="u-product-title-link" href="products/titolo-prodotto-5.html">Kia Sportage Cool 1.7 diesel</a>
+              </h4><!--/product_title--><!--product_content-->
+              <div class="u-product-control u-product-desc u-text u-text-10">Questa macchina rappresenta indubbiamente
+                una delle eccellenze circolanti, grazie al suo motore di prim'ordine e alle condizioni impeccabili.
+              </div><!--/product_content--><!--product_price-->
+              <div class="u-product-control u-product-price u-product-price-5">
+                <div class="u-price-wrapper u-spacing-10"><!--product_old_price-->
+                  <div class="u-hide-price u-old-price">
+                    <!--product_old_price_content-->$10<!--/product_old_price_content-->
+                  </div>
+                  <div class="text">9700</div>
+                </div>
+              </div>
+              <button type="submit">Ottieni info</button>
+            </div>
+          </div>
+          <div class="u-align-left u-container-style u-products-item u-repeater-item u-white u-repeater-item-6"
+            data-product-id="1">
+            <div
+              class="u-container-layout u-similar-container u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-6">
+              <!--product_image-->
+              <a class="u-product-title-link" href="products/titolo-prodotto-6.html"><img alt=""
+                  class="u-expanded-width u-image u-image-contain u-image-default u-product-control"
+                  src="macchine_in_vendita/toyoa.jpeg"></a><!--/product_image--><!--product_title-->
+              <h4 class="u-product-control u-text u-text-11">
+                <a class="u-product-title-link" href="products/titolo-prodotto-6.html">Toyota Aygo 1.0 Benzina</a>
+              </h4><!--/product_title--><!--product_content-->
+              <div class="u-product-control u-product-desc u-text u-text-12">
+
+                Nel panorama automobilistico, questa vettura si distingue come una delle migliori, con un motore potente
+                e in condizioni eccezionali.</div><!--/product_content--><!--product_price-->
+              <div class="u-product-control u-product-price u-product-price-6">
+                <div class="u-price-wrapper u-spacing-10"><!--product_old_price-->
+                  <div class="u-hide-price u-old-price">
+                    <!--product_old_price_content-->$175<!--/product_old_price_content-->
+                  </div>
+                  <div class="text">3000</div>
+                </div>
+              </div>
+              <button type="submit">Ottieni info</button>
+            </div>
+          </div><!--/products-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Section "Statistics" -->
+  <div class="w3-container w3-row w3-center w3-padding-64" style="background-color:red;">
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">14+</span>
+      <br>Accordi
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">785+</span>
+      <br>Macchine vendute
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">810+</span>
+      <br>Recensioni
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">8+</span>
+      <br>Affiliazioni
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="w3-container w3-light-grey w3-padding-64">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>Le Nostre Skills</h3>
+        <p>La nostra concessionaria si distingue per la competenza e l'esperienza che mettiamo al servizio dei
+          nostri clienti. Grazie a una squadra altamente qualificata e appassionata, siamo in grado di offrire una
+          vasta gamma di veicoli, ciascuno caratterizzato da un'attenta selezione, sia in termini di prestazioni
+          che di estetica.
+
+          La nostra abilità nel comprendere le esigenze dei clienti e consigliare il veicolo perfetto per le loro
+          esigenze è ciò che ci rende un partner di fiducia per chiunque cerchi il veicolo ideale. Ogni nostro
+          veicolo è selezionato con cura, tenendo conto di ogni dettaglio, dal comfort alla sicurezza, dalla
+          tecnologia all'eleganza.
+        </p>
+      </div>
+      <div class="w3-col m6" style="padding-top: 30px;">
+        <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Qualita immagini</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-center" style="width:95%">95%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-heart w3-margin-right"></i>Affidabilità</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Solidità</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-center" style="width:92%">92%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-01" style="background-color: #222427;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+          <h2 class="footer-heading">SEDE DI TROIA</h2>
+          <p>
+
+            Via Roma, 320
+            71029 Troia (FG)
+            Arturo Martino: +39 320 238 8246 <br>
+            Giovanni Martino: +39 335 572 3825
+            Telefono: +39 099 844 24 44 <br>
+            Email: Arturauto@gmail.com
+
+
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+          <h2 class="footer-heading">DATI FISCALI </h2>
+          <div class="block-21 mb-4 d-flex">
+            <a class="img mr-4 rounded" style="background-image: url(bootstrap-footer-20/images/image_1.jpg);"></a>
+            <div class="text">
+              <h3 class="heading"><a href="#">
+                  Arturo Martino
+
+                  Via Aldo Moro, 37  
+                  71029 Troia FG
+                </a></h3>
+              <div class="meta">
+
+              </div>
+            </div>
+          </div>
+          <div class="block-21 mb-4 d-flex">
+            <a class="img mr-4 rounded" style="background-image: url(bootstrap-footer-20/images/image_2.jpg);"></a>
+            <div class="text">
+              <h3 class="heading"><a href="#">C.F/P.IVA: 02735640738
+                  Registro delle imprese: FG
+                  REA: FG-166278</a></h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+          <h2 class="footer-heading">LINK VELOCI </h2>
+          <ul class="list-unstyled">
+            <li><a href="#" class="py-2 d-block">Home</a></li>
+            <li><a href="#" class="py-2 d-block">Informations</a></li>
+            <li><a href="#" class="py-2 d-block">Contact</a></li>
+            <li><a href="#" class="py-2 d-block">Car List</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+          <h2 class="footer-heading">HAI DOMANDE ?</h2>
+          <div class="block-23 mb-3">
+              <ul>
+                <li><span id="testofine">Per qualsiasi tipo di domande contattare:</span></li>
+                <li><span id="testofine">+39 379147 3732</span></li>
+                <li><span id="testofine">Arturauto@gmail.com</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
